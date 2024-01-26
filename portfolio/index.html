@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Portfolio</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Your introduction and skills go here.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project" onclick="showProjectDetails('project1')">
+      <h3>Project 1</h3>
+    </div>
+    <div class="project" onclick="showProjectDetails('project2')">
+      <h3>Project 2</h3>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <!-- Project Details Modal -->
+  <div id="projectDetailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProjectDetails()">&times;</span>
+      <h2 id="projectTitle"></h2>
+      <p id="projectDescription"></p>
+      <!-- Add more project details as needed -->
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Your contact information and form go here.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
